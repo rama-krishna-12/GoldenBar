@@ -1,0 +1,65 @@
+{
+  "id": "/",
+  "name": "GoldenBar: AI Gym Coach",
+  "short_name": "GoldenBar",
+  "description": "GoldenBar - Personal fitness training app with guided workouts, exercise library, set logging, 30-day plans, hydration tracking, and body progress.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay"],
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0284c7",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["fitness", "health", "sports", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Today's Workout",
+      "short_name": "Workout",
+      "description": "Jump directly into your daily workout session",
+      "url": "/?shortcut=workout",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Exercise Library",
+      "short_name": "Exercises",
+      "description": "Browse full muscle groups and exercise library",
+      "url": "/?shortcut=exercises",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

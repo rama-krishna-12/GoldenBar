@@ -1,0 +1,6 @@
+{
+  "name": "GoldenBar: AI Gym Coach",
+  "description": "AI gym coach and personal fitness training app with 50+ exercises, guided workouts, 30-day plans, hydration tracking, and body progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

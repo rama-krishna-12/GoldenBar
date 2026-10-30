@@ -1,0 +1,17 @@
+include ':app'
+
+// Local self-contained Capacitor Android library (no node_modules required)
+include ':capacitor-android'
+if (new File(settingsDir, 'capacitor-android').exists()) {
+    project(':capacitor-android').projectDir = new File(settingsDir, 'capacitor-android')
+} else if (new File(settingsDir, '../node_modules/@capacitor/android/capacitor').exists()) {
+    project(':capacitor-android').projectDir = new File(settingsDir, '../node_modules/@capacitor/android/capacitor')
+}
+
+// Cordova plugins if present
+if (new File(settingsDir, 'capacitor-cordova-android-plugins').exists()) {
+    include ':capacitor-cordova-android-plugins'
+    project(':capacitor-cordova-android-plugins').projectDir = new File(settingsDir, 'capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.settings.gradle'
